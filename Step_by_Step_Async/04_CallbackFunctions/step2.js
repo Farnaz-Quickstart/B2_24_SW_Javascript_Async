@@ -12,18 +12,18 @@
 // setTimeout: Ii a JavaScript function that lets us execute a piece of code after a specified amount of time has passed.
 // setTimeout(functionRef, delay)
 
-function hello () {
+function startScript () {
   setTimeout(() => {
-    console.log ("Hello!");
-  }, 3000);
+    console.log ("Script start")
+  }, 5000);
 }
 
-function howAreYou() {
-  console.log ("How are you!");
+function endScript () {
+  console.log ("Script end")
 }
 
-hello()
-howAreYou();
+startScript()
+endScript();
 
 
 

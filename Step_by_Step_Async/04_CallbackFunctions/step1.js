@@ -8,17 +8,14 @@
 
 // Description: Once the asynchronous operation is complete, the callback function is invoked.
 
-// Step1:
-function hello () {
-  console.log ("Hello!");
+function startScript () {
+  console.log ("Script start")
 }
 
-
-function howAreYou() {
-  console.log ("How are you!");
+function endScript () {
+  console.log ("Script end")
 }
 
-
-hello()
-howAreYou();
+startScript()
+endScript();
 
