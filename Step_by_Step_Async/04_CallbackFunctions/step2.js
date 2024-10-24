@@ -14,16 +14,20 @@
 
 function startScript () {
   setTimeout(() => {
-    console.log ("Script start")
-  }, 5000);
+    console.log ("Connecting to  Database")
+  }, 4000);
+
 }
 
 function endScript () {
-  console.log ("Script end")
+  console.log ("showing data from database")
 }
 
 startScript()
-endScript();
+endScript()
+
+
+
 
 
 

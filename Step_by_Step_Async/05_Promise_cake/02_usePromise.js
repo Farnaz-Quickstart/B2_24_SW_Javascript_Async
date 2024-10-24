@@ -7,13 +7,19 @@
 //    Success: Alice deliver a cake that she promise.
 //    Failour: Alice might not be able to make the cake for some reason.
 
-let alicPromiseBakingCake = new Promise(function(resolved, rejected){
+let alicPromiseBakingCake = new Promise(function(resolve, reject){
 
-  cakeBaked = false;
+  let cakeBaked = true;
   if (cakeBaked) {
-    resolved ("Cake is ready")
+    resolve ("Cake is ready")
   } else {
-    rejected ("Sorry, no cake today.")
+    reject ("Sorry, no cake today.")
   }
 })
 
+
+alicPromiseBakingCake.then(function(data){
+  console.log (data)
+}).catch(function(error){
+  console.log (error)
+})

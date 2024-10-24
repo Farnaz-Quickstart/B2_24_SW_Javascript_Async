@@ -15,13 +15,13 @@
                       
 function startScript (callBack) {
   setTimeout(() => {
-    console.log ("Script start")
+    console.log ("connecting to db")
     callBack();
   }, 5000);
 }
 
 function endScript () {
-  console.log ("Script end")
+  console.log ("showing records from DB")
 }
 
 startScript(endScript)

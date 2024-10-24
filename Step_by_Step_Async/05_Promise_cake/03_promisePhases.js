@@ -10,9 +10,10 @@
 
 let alicPromiseBakingCake = new Promise(function(resolved, rejected){
 
-  cakeBaked = false;
+  cakeBaked = true;
   if (cakeBaked) {
-    resolved ("Cake is ready")
+   
+    resolved ([1,2,3])    
   } else {
     rejected ("Sorry, no cake today.")
   }
@@ -24,4 +25,6 @@ let alicPromiseBakingCake = new Promise(function(resolved, rejected){
 //   2- Fullfill: If Alice delivers the cake, Bob will be happy and enjoy the cake.
 //   3- Rejected: If Alice fails to deliver the cake, Bob will be disappointed.
 
-const promiseTemp = alicPromiseBakingCake() //pending
+alicPromiseBakingCake
+  .then ((cake)=>{console.log (cake)})
+  .cathch ((error)=>{console.log (error)})

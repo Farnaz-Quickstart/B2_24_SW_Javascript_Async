@@ -6,14 +6,18 @@
 // Outcome posibilities: 
 //    Success: Alice deliver a cake that she promise.
 //    Failour: Alice might not be able to make the cake for some reason.
+let isConnectedToDB
 
-let alicPromiseBakingCake = new Promise(function(resolved, rejected){
+let alicPromiseBakingCake = new Promise(function(resolve, reject){
+   // Trying to connect to DB
+   // It take time
+   isConnectedToDB = true
+   if (isConnectedToDB == true) {
+    resolve("Connected to DB")
+   } else {
+    reject ("Error")
+   }
+} )
 
-  cakeBaked = false;
-  if (cakeBaked) {
-    resolved ("Cake is ready")
-  } else {
-    rejected ("Sorry, no cake today.")
-  }
-})
+
 
