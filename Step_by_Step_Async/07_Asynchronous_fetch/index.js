@@ -2,9 +2,27 @@
 // await: Wait for the promise
 // api: https://jsonplaceholder.typicode.com/users
 
- async function fetchApi () {
-  let response = await  fetch ("https://jsonplaceholder.typicode.com/users")
+ async function clickHandler_fetchdata () {
+  let response = await fetch ("https://jsonplaceholder.typicode.com/users")
   let data = await response.json()
-  console.log (data)
- }
+  data.forEach(element => {
+    console.log (element)
+    console.log (element.username)
+  });
+}
+
+
+
+
+
+
+
+
+
+
+//  async function fetchApi () {
+//   let response = await  fetch ("https://jsonplaceholder.typicode.com/users")
+//   let data = await response.json()
+//   console.log (data)
+//  }
 
