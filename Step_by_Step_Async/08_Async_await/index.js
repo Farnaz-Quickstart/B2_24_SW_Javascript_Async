@@ -7,5 +7,3 @@ async function fetchUserData() {
     console.error('Error fetching users:', error);  // Handles any errors
   }
 }
-
-fetchUserData();  // Calls the function

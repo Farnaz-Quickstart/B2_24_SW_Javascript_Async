@@ -21,34 +21,5 @@ let promiseApiConnection1 = new Promise(function(resolved, rejected){
   }
 })
 
-promiseApiConnection1.then
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-let promiseApiConnection = new Promise (function (resolved, rejected){
-  // Steps for conneting to API
-  isConnected = true
-  if (isConnected = true) {
-    resolved ("Status: 200, Connected to API is successful")
-  } else {
-    rejected ("Error 400, bad request")
-  }
-})
 

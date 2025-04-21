@@ -5,9 +5,12 @@
 
 // Steps 1: Connect to API
 
-let p1 = fetch ('https://jsonplaceholder.typicode.com/users')
 
+let p2 = fetch ("https://jsonplaceholder.typicode.com/users")
 
-fetch ('https://jsonplaceholder.typicode.com/users')
-  .then((response)=>{  return response.json()})
-  .then ((data)=>{console.log (data)})
+p2
+  .then((response)=>{
+    return response.json()
+  })
+  .then((data)=>{console.log(data)})
+  .catch((error)=>{console.log(error)})

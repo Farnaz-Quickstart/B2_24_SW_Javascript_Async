@@ -13,15 +13,15 @@
 // setTimeout(functionRef, delay)
 
                       
-function startScript (callBack) {
+function task1 (callBack) {
   setTimeout(() => {
-    console.log ("connecting to db")
+    console.log ("task1: Connecting to database")
     callBack();
   }, 5000);
 }
 
-function endScript () {
-  console.log ("showing records from DB")
+function task2 () {
+  console.log ("task2: Getting data from database")
 }
 
-startScript(endScript)
+task1(task2)

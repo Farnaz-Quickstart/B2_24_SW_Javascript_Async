@@ -8,14 +8,14 @@
 
 // Description: Once the asynchronous operation is complete, the callback function is invoked.
 
-function startScript () {
-  console.log ("Script start")
+function task1 () {
+  console.log ("task1: Connecting to database")
 }
 
-function endScript () {
-  console.log ("Script end")
+function task2 () {
+  console.log ("task2: Getting data from database")
 }
 
-startScript()
-endScript();
+task1()
+task2();
 
